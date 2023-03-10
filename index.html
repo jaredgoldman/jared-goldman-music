@@ -12,10 +12,10 @@
                 <a href='/'>JG</a>
             </div>
             <div>
-                <a href='gigs'>Gigs</a>
+                <a href='/gigs.html'>Gigs</a>
             </div>
             <div>
-                <a href='media'>Media</a>
+                <a href='/media.html'>Media</a>
             </div>
         </header>
         <main class='home'>
@@ -28,14 +28,14 @@
                     Some bio text will go here
                 </div>
             </section>
-            <form>
-                <h3>Contact Form</h3>
-                <div class='contact-form_label'>
-                    <label>Name</label>
+            <h3>Contact Form</h3>
+            <form method='post' action='http://localhost:1337' target='_self'>
+                <div  class='contact-form_body'>
+                    <label class='contact-form_label'>Name</label>
                     <input type='name'>
-                    <label>Email Address</label>
+                    <label class='contact-form_label'>Email Address</label>
                     <input type='email'>
-                    <label>Message</label>
+                    <label class='contact-form_label'>Message</label>
                     <input type='text'>
                     <button type='submit'>Submit</button>
                 </div>

@@ -1,8 +1,7 @@
-// Need to fetch gigs and possibly images/videos from cms
-// Then create html elements and map them into the gigs element
+import { CMS_API_KEY } from './config.js'
+
 const request = async (path) => {
-    const token =
-        '20ce89b90e40cf105abb1367296ef57206f7f5f628cdb377b6296236a1bdfcf0946fefde3ffd1387266601ff5b427e70271b82d581b7097224538fa1c6680dcfb8090bb17a36dc411eb42fd38f63d856f2c5cc23c032f0ad311af1e92370bc8f428e9e92142d841b148219b6b5a6f28a19340397cc9cb7e6a59277674f5019b2'
+    const token = CMS_API_KEY
     const res = await fetch(`http://localhost:1337/api${path}`, {
         headers: {
             Authorization: `bearer ${token}`,
@@ -16,10 +15,10 @@ const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString(undefined, options)
 }
 
+// TODO: Dry this up
 const mapGigs = async () => {
     const { data: gigs } = await request('/gigs')
     const gigsNode = document.querySelector('.gigs')
-    console.log(gigs)
     gigs.forEach((gig) => {
         const gigData = gig.attributes
         const gigNode = document.createElement('div')
