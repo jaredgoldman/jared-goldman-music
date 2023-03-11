@@ -1,14 +1,4 @@
-import { CMS_API_KEY } from './config.js'
-
-const request = async (path) => {
-    const token = CMS_API_KEY
-    const res = await fetch(`http://localhost:1337/api${path}`, {
-        headers: {
-            Authorization: `bearer ${token}`,
-        },
-    })
-    return await res.json()
-}
+import { request } from './shared.js'
 
 const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' }

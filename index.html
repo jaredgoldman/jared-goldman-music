@@ -4,7 +4,8 @@
         <title>Jared Goldman | Professional Drummer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="styles.css" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
+        <script src="scripts/contact.js" type="module"></script>
     </head>
     <body>
         <header>
@@ -29,14 +30,14 @@
                 </div>
             </section>
             <h3>Contact Form</h3>
-            <form method='post' action='http://localhost:1337' target='_self'>
+            <form id="contact" method='post' target='_self'>
                 <div  class='contact-form_body'>
                     <label class='contact-form_label'>Name</label>
-                    <input type='name'>
+                    <input id='contact-name' type='name'>
                     <label class='contact-form_label'>Email Address</label>
-                    <input type='email'>
+                    <input id='contact-email'type='email'>
                     <label class='contact-form_label'>Message</label>
-                    <input type='text'>
+                    <input id='contact-message' type='text'>
                     <button type='submit'>Submit</button>
                 </div>
             </form>
