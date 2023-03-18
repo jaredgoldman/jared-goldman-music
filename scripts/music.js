@@ -5,25 +5,27 @@ const getBandcampEmbeds = async () => {
     console.log('embed data', data)
     const embedFragment = new DocumentFragment()
     data.forEach((embedData) => createEmbedCard(embedData, embedFragment))
-    const embedNode = document.querySelector('#music-embeds')
+    const embedNode = document.querySelector('.music-embeds')
     embedNode.appendChild(embedFragment)
 }
 
 const createEmbedCard = ({ attributes }, fragment) => {
     console.log(attributes)
     const card = document.createElement('div')
-    card.classList.add('music-embed_container')
+    card.classList.add('music-embed_card')
 
     const iframe = document.createElement('iframe')
     iframe.src = attributes.source
+    iframe.seamless
     iframe.classList.add('music-embed_iframe')
-    iframe.seamless = true
 
-    const titleAnchor = document.createElement('a')
-    titleAnchor.href = attributes.link
-    titleAnchor.innerText = attributes.title
+    const title = document.createElement('h2')
+    title.href = attributes.link
+    title.innerText = `${attributes.title} - ${attributes.artist}`
+    title.classList.add('music-embed_album-title')
 
-    iframe.appendChild(titleAnchor)
+    iframe.appendChild(title)
+    card.appendChild(title)
     card.appendChild(iframe)
     fragment.appendChild(card)
 }
