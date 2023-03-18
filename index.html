@@ -13,17 +13,21 @@
     <body>
         <main-header></main-header>
         <main class="home">
-            <section class="home-hero">
-                <h1 class="home-hero_heading">
-                    Jared Goldman | Professional Drummer
-                </h1>
-                <h3 class="home-hero_desc">Hero description</h3>
+            <section class="home-hero_container">
+                <div class="home-hero">
+                    <h1 class="home-hero_heading">Jared Goldman</h1>
+                    <h1 class="home-hero_heading-two">Drummer/Educator</h1>
+                    <!-- <h3 class="home-hero_desc">Hero description</h3> -->
+                </div>
             </section>
             <section class="home-bio">
                 <div>Some bio text will go here</div>
             </section>
+            <section class="home-featured_container">
+                <div class="home-featured">Features content will go here</div>
+            </section>
             <section class="home-contact-form_container">
-                <h3>Contact Form</h3>
+                <h3>Say hello :)</h3>
                 <form
                     class="home-contact-form"
                     id="contact"
@@ -43,7 +47,7 @@
                         </div>
                         <div class="contact-form_field">
                             <label class="contact-form_label">Message</label>
-                            <input id="contact-message" type="text" />
+                            <textarea ="contact" type="text"></textarea>
                         </div>
                         <button type="submit">Submit</button>
                     </div>
