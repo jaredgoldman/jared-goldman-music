@@ -6,3 +6,13 @@ main {
     justify-content: center;
     color: white;
 }
+
+.heading_container {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}

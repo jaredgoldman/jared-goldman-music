@@ -1,0 +1,33 @@
+.videos_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.videos {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.video-heading {
+    width: 100%;
+    text-align: left;
+}
+
+.video-desc {
+    width: 100%;
+    text-align: left;
+}
+
+.video-video {
+    width: 100%;
+    height: auto;
+}

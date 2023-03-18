@@ -12,20 +12,24 @@ const mapMedia = async () => {
     const videoFragment = new DocumentFragment()
     videos.forEach((video) => createVideoComp(video, videoFragment))
 
-    const videoNode = document.querySelector('#videos')
+    const videoNode = document.querySelector('.videos')
     videoNode.appendChild(videoFragment)
 }
 
 const createVideoComp = ({ attributes }, videoFragment) => {
     const card = document.createElement('div')
+    card.classList.add('video-container')
 
     const title = document.createElement('h3')
     title.textContent = attributes.title
+    title.classList.add('video-heading')
 
     const description = document.createElement('p')
     description.textContent = attributes.description
+    description.classList.add('video-desc')
 
     const videoEl = document.createElement('iframe')
+    videoEl.classList.add('video-video')
     videoEl.src = attributes.link
 
     card.appendChild(title)

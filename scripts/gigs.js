@@ -12,13 +12,19 @@ const mapGigs = async () => {
     gigs.forEach((gig) => {
         const gigData = gig.attributes
         const gigNode = document.createElement('div')
+        gigNode.classList.add('gig')
 
         const gigHeading = document.createElement('h1')
-        gigHeading.innerText = gigData.venue
+        gigHeading.innerText = `${gigData.venue} | ${gigData.bandname}`
+        gigHeading.innerText = formatDate(gigData.data)
+        gigHeading.classList.add('gig-card_heading')
+
         const gigVenue = document.createElement('h2')
         gigVenue.innerText = gigData.bandname
+
         const gigSubHeading = document.createElement('span')
-        gigSubHeading.innerText = formatDate(gigData.date)
+        gigSubHeading.innerText = `${gigData.venue} | ${gigData.bandname}`
+
         const gigDesc = document.createElement('p')
         gigDesc.innerText = gigData.description
 
