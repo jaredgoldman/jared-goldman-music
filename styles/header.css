@@ -1,0 +1,48 @@
+main-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    height: 3rem;
+}
+
+.header-links_container {
+    width: 100%;
+    max-width: 55rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-links {
+    display: flex;
+    min-width: 15rem;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+}
+
+.header-link:hover {
+    color: grey;
+}
+
+@media only screen and (max-device-width: 350px) {
+    header {
+        height: 8rem;
+    }
+
+    .header-links_container {
+        justify-content: center;
+        height: 80%;
+    }
+
+    .header-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-e;
+    }
+}

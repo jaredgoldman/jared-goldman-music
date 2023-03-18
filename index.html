@@ -2,45 +2,53 @@
 <html lang="en">
     <head>
         <title>Jared Goldman | Professional Drummer</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="styles/styles.css" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="styles/styles.css" rel="stylesheet" />
+        <link href="styles/index.css" rel="stylesheet" />
+        <link href="styles/header.css" rel="stylesheet" />
         <script src="scripts/contact.js" type="module"></script>
+        <script src="scripts/sharedComponents.js" type="module"></script>
     </head>
     <body>
-        <header>
-            <div>
-                <a href='/'>JG</a>
-            </div>
-            <div>
-                <a href='/gigs.html'>Gigs</a>
-            </div>
-            <div>
-                <a href='/media.html'>Media</a>
-            </div>
-        </header>
-        <main class='home'>
-            <section class='home-hero'>
-                <h1>Jared Goldman</h1>
-                <h3>Hero description</h3>
+        <main-header></main-header>
+        <main class="home">
+            <section class="home-hero">
+                <h1 class="home-hero_heading">
+                    Jared Goldman | Professional Drummer
+                </h1>
+                <h3 class="home-hero_desc">Hero description</h3>
             </section>
-            <section class='bio'>
-                <div>
-                    Some bio text will go here
-                </div>
+            <section class="home-bio">
+                <div>Some bio text will go here</div>
             </section>
-            <h3>Contact Form</h3>
-            <form id="contact" method='post' target='_self'>
-                <div  class='contact-form_body'>
-                    <label class='contact-form_label'>Name</label>
-                    <input id='contact-name' type='name'>
-                    <label class='contact-form_label'>Email Address</label>
-                    <input id='contact-email'type='email'>
-                    <label class='contact-form_label'>Message</label>
-                    <input id='contact-message' type='text'>
-                    <button type='submit'>Submit</button>
-                </div>
-            </form>
+            <section class="home-contact-form_container">
+                <h3>Contact Form</h3>
+                <form
+                    class="home-contact-form"
+                    id="contact"
+                    method="post"
+                    target="_self"
+                >
+                    <div class="home-contact-form_body">
+                        <div class="contact-form_field">
+                            <label class="contact-form_label">Name</label>
+                            <input id="contact-name" type="name" />
+                        </div>
+                        <div class="contact-form_field">
+                            <label class="contact-form_label"
+                                >Email Address</label
+                            >
+                            <input id="contact-email" type="email" />
+                        </div>
+                        <div class="contact-form_field">
+                            <label class="contact-form_label">Message</label>
+                            <input id="contact-message" type="text" />
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
         </main>
     </body>
 </html>
