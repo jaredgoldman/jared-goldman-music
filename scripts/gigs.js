@@ -1,8 +1,10 @@
 import { request } from './shared.js'
 
 const formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' }
-    return new Date(dateString).toLocaleDateString(undefined, options)
+    return new Intl.DateTimeFormat('en-US', {
+        dateStyle: 'full',
+        timeStyle: 'short',
+    }).format(new Date(dateString))
 }
 
 // TODO: Dry this up
@@ -16,7 +18,7 @@ const mapGigs = async () => {
 
         const gigHeading = document.createElement('h1')
         gigHeading.innerText = `${gigData.venue} | ${gigData.bandname}`
-        gigHeading.innerText = formatDate(gigData.data)
+        gigHeading.innerText = formatDate(gigData.date)
         gigHeading.classList.add('gig-card_heading')
 
         const gigVenue = document.createElement('h2')
