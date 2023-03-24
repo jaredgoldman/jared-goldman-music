@@ -7,6 +7,9 @@ class Header extends HTMLElement {
                         <a class="header-link" href="/">JG</a>
                     </div>
                     <div class="header-link_container">
+                        <a class="header-link" href="/about.html">About</a>
+                    </div>
+                    <div class="header-link_container">
                         <a class="header-link" href="/gigs.html">Gigs</a>
                     </div>
                     <div class="header-link_container">
@@ -15,6 +18,10 @@ class Header extends HTMLElement {
                     <div class="header-link_container">
                         <a class="header-link" href="/music.html">Music</a>
                     </div>
+                </div>
+                <div class="header-socials_container">
+                    <a href=https://www.instagram.com/jaredgoldmandrums/ class="header-social_icon">Ig</a>
+                    <a href=mailto:jaredgoldmandrums@gmail.com class="header-social_icon">email</a> 
                 </div>
             </nav>
     `
@@ -25,7 +32,9 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <footer>
-               Made with love by JG
+                <span>
+                    Made with love by <a class='header-link' href=https://github.com/jaredgoldman> JG</a>
+                </span>
             </footer>
         `
     }

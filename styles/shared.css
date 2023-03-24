@@ -11,9 +11,9 @@ main-header {
 
 .header-links_container {
     width: 100%;
-    max-width: 55rem;
+    max-width: 60rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .header-links {
@@ -32,20 +32,30 @@ main-header {
     color: grey;
 }
 
+.header-socials_container {
+    display: flex;
+    width: 15%;
+}
+
+.header-social_icon {
+    margin: 0 0.5rem;
+}
+
 @media only screen and (max-device-width: 350px) {
     header {
         height: 8rem;
     }
 
     .header-links_container {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         height: 80%;
     }
 
     .header-links {
         flex-direction: column;
         align-items: center;
-        justify-content: space-e;
+        margin-bottom: 0.75rem;
     }
 
     .header-link_container {
@@ -54,6 +64,11 @@ main-header {
 
     .header-link {
         font-size: 1.5rem;
+    }
+
+    .header-socials_container {
+        justify-content: center;
+        width: 100%;
     }
 }
 

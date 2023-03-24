@@ -16,6 +16,7 @@ const mapMedia = async () => {
     videoNode.appendChild(videoFragment)
 }
 
+// TODO: refactor to just return card
 const createVideoComp = ({ attributes }, videoFragment) => {
     const card = document.createElement('div')
     card.classList.add('video-container')

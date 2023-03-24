@@ -9,6 +9,7 @@
         <link href="styles/shared.css" rel="stylesheet" />
         <script src="scripts/contact.js" type="module"></script>
         <script src="scripts/sharedComponents.js" type="module"></script>
+        <script src="scripts/home.js" type="module"></script>
     </head>
     <body>
         <main-header></main-header>
@@ -24,10 +25,13 @@
                 <div>Some bio text will go here</div>
             </section>
             <section class="home-featured_container">
-                <div class="home-featured">Features content will go here</div>
+                <div class="home-featured">
+                    <div class="home-featured_video"></div>
+                    <div class="home-featured_album"></div>
+                </div>
             </section>
             <section class="home-contact-form_container">
-                <h3>Say hello :)</h3>
+                <h3 class="home-contact-form_heading">Say hello :)</h3>
                 <form
                     class="home-contact-form"
                     id="contact"
