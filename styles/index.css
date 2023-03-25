@@ -42,17 +42,15 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 80%;
-    max-width: 55rem;
+    width: 100%;
+    /* Why does ths work when a hard-coded value ie: 50rem does not? */
+    max-width: 70%;
 }
 
 .featured-album_iframe {
     border: 0;
-    width: 350px;
-    height: 350px;
-}
-
-.featured-video_iframe {
+    width: 20rem;
+    height: 20rem;
 }
 
 .featured-video_video {
@@ -158,12 +156,12 @@ div.contact-form_field > textarea {
         text-align: center;
     }
 
-    .featured-album_iframe {
-        width: 300px;
+    .featured-video_video {
+        width: 98%;
     }
 }
 
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (max-device-width: 1100px) {
     .home-featured {
         flex-direction: column;
         justify-content: center;
@@ -180,5 +178,12 @@ div.contact-form_field > textarea {
 
     .music-embed_album-title {
         text-align: center;
+    }
+}
+
+@media only screen and (max-device-width: 350px) {
+    .featured-album_iframe {
+        width: 15rem;
+        height: 15rem;
     }
 }

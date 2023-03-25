@@ -1,0 +1,10 @@
+.bio {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.about_content {
+    width: 80%;
+    max-width: 50rem;
+}

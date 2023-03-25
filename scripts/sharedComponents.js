@@ -19,7 +19,7 @@ class Header extends HTMLElement {
                         <a class="header-link" href="/music.html">Music</a>
                     </div>
                 </div>
-                <div class="header-socials_container">
+                <div class="header-socials">
                     <a href=https://www.instagram.com/jaredgoldmandrums/ class="header-social_icon">
                         <div class='header-socials_image-container'>
                             <img src='../assets/insta.png'/>
