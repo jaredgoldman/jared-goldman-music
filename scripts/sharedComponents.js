@@ -20,8 +20,16 @@ class Header extends HTMLElement {
                     </div>
                 </div>
                 <div class="header-socials_container">
-                    <a href=https://www.instagram.com/jaredgoldmandrums/ class="header-social_icon">Ig</a>
-                    <a href=mailto:jaredgoldmandrums@gmail.com class="header-social_icon">email</a> 
+                    <a href=https://www.instagram.com/jaredgoldmandrums/ class="header-social_icon">
+                        <div class='header-socials_image-container'>
+                            <img src='../assets/insta.png'/>
+                        </div>
+                    </a>
+                    <a href=mailto:jaredgoldmandrums@gmail.com class="header-social_icon">
+                        <div class='header-socials_image-container'>
+                            <img src='../assets/email.png'/>
+                        </div>
+                    </a> 
                 </div>
             </nav>
     `
