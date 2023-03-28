@@ -145,6 +145,20 @@ div.contact-form_field > textarea {
     cursor: pointer;
 }
 
+.home-contact-form_success {
+    display: none;
+    position: fixed;
+    background-color: black;
+    top: 1rem;
+    right: 2rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+.home-contact-form_success-active {
+    display: block;
+}
+
 @media only screen and (max-device-width: 500px) {
     .home-hero {
         align-items: center;

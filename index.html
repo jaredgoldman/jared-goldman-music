@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jared Goldman | Professional Drummer</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="styles/styles.css" rel="stylesheet" />
-        <link href="styles/index.css" rel="stylesheet" />
-        <link href="styles/shared.css" rel="stylesheet" />
-        <script src="scripts/contact.js" type="module"></script>
-        <script src="scripts/sharedComponents.js" type="module"></script>
-        <script src="scripts/home.js" type="module"></script>
-    </head>
-    <body>
-        <main-header></main-header>
-        <main class="home">
-            <section class="home-hero_container">
-                <div class="home-hero">
-                    <h1 class="home-hero_heading">Jared Goldman</h1>
-                    <h1 class="home-hero_heading-two">Drummer/Educator</h1>
-                    <!-- <h3 class="home-hero_desc">Hero description</h3> -->
-                </div>
-            </section>
-            <section class="home-bio">
-                <div>Some bio text will go here</div>
-            </section>
-            <section class="home-featured_container">
-                <div class="home-featured">
-                    <div class="home-featured_video"></div>
-                    <div class="home-featured_album"></div>
-                </div>
-            </section>
-            <section class="home-contact-form_container">
-                <h3 class="home-contact-form_heading">Say hello :)</h3>
-                <form
-                    class="home-contact-form"
-                    id="contact"
-                    method="post"
-                    target="_self"
-                >
-                    <div class="home-contact-form_body">
-                        <div class="contact-form_field">
-                            <label class="contact-form_label">Name</label>
-                            <input id="contact-name" type="name" />
-                        </div>
-                        <div class="contact-form_field">
-                            <label class="contact-form_label"
-                                >Email Address</label
-                            >
-                            <input id="contact-email" type="email" />
-                        </div>
-                        <div class="contact-form_field">
-                            <label class="contact-form_label">Message</label>
-                            <textarea ="contact" type="text"></textarea>
-                        </div>
-                        <button class="contact-form_button" type="submit">
-                            Submit
-                        </button>
+
+<head>
+    <title>Jared Goldman | Professional Drummer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
+    <link href="styles/shared.css" rel="stylesheet" />
+    <script src="scripts/contact.js" type="module"></script>
+    <script src="scripts/sharedComponents.js" type="module"></script>
+    <script src="scripts/home.js" type="module"></script>
+</head>
+
+<body>
+    <main-header></main-header>
+    <main class="home">
+        <section class="home-hero_container">
+            <div class="home-hero">
+                <h1 class="home-hero_heading">Jared Goldman</h1>
+                <h1 class="home-hero_heading-two">Drummer/Educator</h1>
+                <!-- <h3 class="home-hero_desc">Hero description</h3> -->
+            </div>
+        </section>
+        <section class="home-bio">
+            <div>Some bio text will go here</div>
+        </section>
+        <section class="home-featured_container">
+            <div class="home-featured">
+                <div class="home-featured_video"></div>
+                <div class="home-featured_album"></div>
+            </div>
+        </section>
+        <section class="home-contact-form_container">
+            <h3 class="home-contact-form_heading">Say hello :)</h3>
+            <form class="home-contact-form" id="contact" method="post" target="_self">
+                <div class="home-contact-form_body">
+                    <div class="contact-form_field">
+                        <label class="contact-form_label">Name</label>
+                        <input id="contact-name" type="name" />
                     </div>
-                </form>
-            </section>
-            <main-footer></main-footer>
-        </main>
-    </body>
+                    <div class="contact-form_field">
+                        <label class="contact-form_label">Email Address</label>
+                        <input id="contact-email" type="email" />
+                    </div>
+                    <div class="contact-form_field">
+                        <label class="contact-form_label">Message</label>
+                        <textarea id="contact-message" type="text"></textarea>
+                    </div>
+                    <button class="contact-form_button" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </section>
+        <div>
+            <div class="home-contact-form_success">
+                <h3 class="home-contact-form_success-heading">
+                    Thank you for your message!
+                </h3>
+                <p class="home-contact-form_success-text">
+                    I will get back to you as soon as possible.
+                </p>
+            </div>
+        </div>
+        <main-footer></main-footer>
+    </main>
+</body>
+
 </html>
