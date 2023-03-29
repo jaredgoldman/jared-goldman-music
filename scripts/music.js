@@ -10,11 +10,12 @@ const getBandcampEmbeds = async () => {
 
 // TODO: refactor to just return card
 const createEmbedCard = ({ attributes }, fragment) => {
+    console.log(attributes)
     const card = document.createElement('div')
     card.classList.add('music-embed_card')
 
     const iframe = document.createElement('iframe')
-    iframe.src = attributes.source
+    iframe.src = `https://bandcamp.com/EmbeddedPlayer/album=${attributes.uuid}/size=large/bgcol=181a1b/linkcol=056cc4/tracklist=false/artwork=small/transparent=true`
     iframe.seamless
     iframe.classList.add('music-embed_iframe')
 

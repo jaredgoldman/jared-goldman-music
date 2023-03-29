@@ -17,6 +17,7 @@ const createFeaturedEmbedCard = ({ attributes }) => {
 
     const iframe = document.createElement('iframe')
     iframe.src = attributes.source_small
+    iframe.src = `https://bandcamp.com/EmbeddedPlayer/album=${attributes.uuid}/size=large/bgcol=181a1b/linkcol=056cc4/minimal=true/transparent=true`
     iframe.seamless
     iframe.classList.add('featured-album_iframe')
 
@@ -41,7 +42,7 @@ const createFeaturedVideoCard = ({ attributes }) => {
 
     const videoEl = document.createElement('iframe')
     videoEl.classList.add('featured-video_video')
-    videoEl.src = attributes.link
+    videoEl.src = `https://www.youtube.com/embed/${attributes.yt_id}`
 
     card.appendChild(title)
     card.appendChild(videoEl)

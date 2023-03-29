@@ -18,6 +18,7 @@ const mapMedia = async () => {
 
 // TODO: refactor to just return card
 const createVideoComp = ({ attributes }, videoFragment) => {
+    console.log(attributes)
     const card = document.createElement('div')
     card.classList.add('video-container')
 
@@ -31,7 +32,7 @@ const createVideoComp = ({ attributes }, videoFragment) => {
 
     const videoEl = document.createElement('iframe')
     videoEl.classList.add('video-video')
-    videoEl.src = attributes.link
+    videoEl.src = `https://www.youtube.com/embed/${attributes.yt_id}`
 
     card.appendChild(title)
     card.appendChild(videoEl)
