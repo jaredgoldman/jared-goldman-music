@@ -2,10 +2,12 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    width: 100%;
 }
 
 .videos {
     width: 90%;
+    max-width: 61rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }

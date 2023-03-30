@@ -21,13 +21,13 @@ const createFeaturedEmbedCard = ({ attributes }) => {
     iframe.seamless
     iframe.classList.add('featured-album_iframe')
 
-    const title = document.createElement('h2')
-    title.href = attributes.link
-    title.innerText = `${attributes.title} - ${attributes.artist}`
-    title.classList.add('featured-content_title')
+    // const title = document.createElement('h2')
+    // title.href = attributes.link
+    // title.innerText = `${attributes.title} - ${attributes.artist}`
+    // title.classList.add('featured-content_title')
 
-    iframe.appendChild(title)
-    card.appendChild(title)
+    // iframe.appendChild(title)
+    // card.appendChild(title)
     card.appendChild(iframe)
     return card
 }
@@ -36,15 +36,15 @@ const createFeaturedVideoCard = ({ attributes }) => {
     const card = document.createElement('div')
     card.classList.add('featured-video_iframe')
 
-    const title = document.createElement('h3')
-    title.textContent = attributes.title
-    title.classList.add('featured-content_title')
+    // const title = document.createElement('h3')
+    // title.textContent = attributes.title
+    // title.classList.add('featured-content_title')
 
     const videoEl = document.createElement('iframe')
     videoEl.classList.add('featured-video_video')
     videoEl.src = `https://www.youtube.com/embed/${attributes.yt_id}`
 
-    card.appendChild(title)
+    // card.appendChild(title)
     card.appendChild(videoEl)
 
     return card

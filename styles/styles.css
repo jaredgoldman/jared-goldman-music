@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&?family=Carter+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 body,
 main {
     position: relative;
@@ -7,6 +11,11 @@ main {
     width: 100%;
     color: white;
     background-color: black;
+    font-family: 'Heebo', sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Carter One', cursive
 }
 
 .heading_container {

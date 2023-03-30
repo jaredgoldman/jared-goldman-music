@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 /* Header styles */
 main-header {
     display: flex;
@@ -6,22 +8,27 @@ main-header {
     align-items: center;
     border-bottom: 1px solid grey;
     padding: 1.5rem;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    font-family: 'Carter One', cursive;
 }
 
 .header-links_container {
     width: 100%;
-    max-width: 55rem;
+    max-width: 60rem;
     display: flex;
     justify-content: space-between;
 }
+
 
 .header-links {
     display: flex;
     min-width: 15rem;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+}
+
+.header-link_container {
+    margin-right: 1.25rem
 }
 
 .header-link {
@@ -119,7 +126,7 @@ main-footer {
 footer {
     display: flex;
     width: 100%;
-    max-width: 55rem;
+    max-width: 60rem;
     justify-content: flex-start;
     text-align: left;
 }
