@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&?family=Carter+One&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+:root {
+    --main-bg-color: #7DCFB6;
+    --secondary-bg-color: #FBCF9D;
+    --header-footer-bg-color: #1D4E89;
+    --main-text-color: white;
+    --secondary-text-color: #00B2CA;
+    --main-border-color: grey;
+    --secondary-border-color: white;
+}
 
 body,
 main {
@@ -9,9 +18,10 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    color: white;
-    background-color: black;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
     font-family: 'Heebo', sans-serif;
+    margin: 0;
 }
 
 h2, h3 {
