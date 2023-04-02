@@ -29,22 +29,22 @@ const createFeaturedVideoCard = ({ attributes }) => {
     const card = document.createElement('div')
     card.classList.add('featured-video_iframe')
 
-    // const title = document.createElement('h3')
-    // title.textContent = attributes.title
-    // title.classList.add('featured-content_title')
-
     const videoEl = document.createElement('iframe')
     videoEl.classList.add('featured-video_video')
     videoEl.src = `https://www.youtube.com/embed/${attributes.yt_id}`
 
-    // card.appendChild(title)
     card.appendChild(videoEl)
 
     return card
 }
 
-// Actions
-
+const sizeFeaturedAlbum = () => {
+    const albumNode = document.querySelector('.featured-album_iframe')
+    const width = albumNode.offsetWidth
+    const height = width / 16
+    albumNode.style.height = `${height}rem`
+}
 document.addEventListener('DOMContentLoaded', () => {
     loadContent()
+    sizeFeaturedAlbum()
 })

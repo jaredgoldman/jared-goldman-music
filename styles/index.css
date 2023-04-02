@@ -5,8 +5,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 5rem 0;
+    padding: 5rem 1.5rem;
     background-image: linear-gradient(to top, #1C0B19, #000000);
+    box-sizing: border-box;
 }
 
 .home-hero {
@@ -231,15 +232,17 @@ div.contact-form_field > textarea {
     display: block;
 }
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-device-width: 550px) {
     .home-hero {
         align-items: center;
     }
 
     .home-hero_heading,
     .home-hero_heading-two {
-        font-size: 1.5rem;
         text-align: center;
+    }
+    .home-hero_heading-two {
+        font-size: 1.5rem;
     }
 
     .featured-video_video {
@@ -304,9 +307,8 @@ div.contact-form_field > textarea {
     }
 }
 
-@media only screen and (max-device-width: 350px) {
+@media only screen and (max-device-width: 450px) {
     .featured-album_iframe {
-        width: 15rem;
-        height: 15rem;
+        width: 90%;
     }
 }
