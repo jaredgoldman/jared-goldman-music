@@ -93,7 +93,6 @@ div.header-socials_image-container > img {
 @media only screen and (max-device-width: 400px) {
     main-header {
         justify-content: flex-start;
-        padding-bottom: 0.5rem;
     }
 
     main-header.active {

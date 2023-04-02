@@ -29,7 +29,7 @@
     width: 17.5rem;
 }
 
-@media only screen and (max-device-width: 350px) {
+@media only screen and (max-device-width: 450px) {
     .gigs {
         align-items: center;
     }
