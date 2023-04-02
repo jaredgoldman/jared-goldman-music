@@ -127,11 +127,12 @@ div.home-contact-form_sub-heading {
     color: white;
 }
 
-div.home-contact-form_heading-container > h3 {
+div.home-contact-form_heading > h3 {
     font-size: 3rem;
     text-align: left;
     margin: 0.05rem;
 }
+
 
 .home-contact-form_body {
     display: flex;
@@ -149,6 +150,7 @@ div.home-contact-form_heading-container > h3 {
     display: flex;
     justify-content: flex-end;
     width: 50%;
+    min-width: 18rem;
 }
 
 .home-contact-form_heading {
@@ -198,9 +200,9 @@ div.contact-form_field > textarea {
     box-sizing: border-box;
     background-color: var(--secondary-bg-color);
     border: 1px var(--secondary-border-color) solid;
-    color: var(--main-text-color)
+    color: var(--main-text-color); 
 }
-
+        
 .contact-form_button {
     background-color: var(--secondary-bg-color);
     padding: 0.5rem 1rem;
@@ -249,7 +251,7 @@ div.contact-form_field > textarea {
     .home-featured {
         justify-content: space-around;
         max-width: 60rem:
-    }w
+    }
 }
 
 @media only screen and (max-device-width: 1100px) {
@@ -257,6 +259,10 @@ div.contact-form_field > textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .home-contact-form_heading {
+        width: 18rem;
     }
 
     .home-featured_video {
@@ -270,20 +276,33 @@ div.contact-form_field > textarea {
     .music-embed_album-title {
         text-align: center;
     }
+
 }
 
-@media only screen and (max-device-width: 750px) {
+@media only screen and (max-device-width: 960px) { 
+   .home-contact-form_heading-arrow {
+        display: none;
+    }
+
+   .home-contact-form_heading-arrow > h3 {
+        margin: none;
+    }
+
+    .home-contact-form_sub-heading {
+        max-width: 25rem;
+    }
+}
+
+@media only screen and (max-device-width: 880px) {
     .home-contact-form_container {
         flex-direction: column;
     }
     .home-contact-form_heading-container {
         margin: 2rem;
         width: 100%;
+        align-items: center;
     }
-    div.home-contact-form_heading-container > h3 {
-        text-align: center;
-    }
-]
+}
 
 @media only screen and (max-device-width: 350px) {
     .featured-album_iframe {
