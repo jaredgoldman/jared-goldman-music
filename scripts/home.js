@@ -21,13 +21,6 @@ const createFeaturedEmbedCard = ({ attributes }) => {
     iframe.seamless
     iframe.classList.add('featured-album_iframe')
 
-    // const title = document.createElement('h2')
-    // title.href = attributes.link
-    // title.innerText = `${attributes.title} - ${attributes.artist}`
-    // title.classList.add('featured-content_title')
-
-    // iframe.appendChild(title)
-    // card.appendChild(title)
     card.appendChild(iframe)
     return card
 }
@@ -49,6 +42,8 @@ const createFeaturedVideoCard = ({ attributes }) => {
 
     return card
 }
+
+// Actions
 
 document.addEventListener('DOMContentLoaded', () => {
     loadContent()

@@ -6,6 +6,7 @@
     justify-content: center;
     width: 100%;
     padding: 5rem 0;
+    background-image: linear-gradient(to top, #1C0B19, #000000);
 }
 
 .home-hero {
@@ -44,6 +45,7 @@
     justify-content: center;
     width: 100%;
     padding: 2rem 0 5rem 0;
+    background-color: var(--tertiary-bg-color)
 }
 
 section.home-featured_container > h3 {
@@ -121,6 +123,10 @@ div.home-contact-form_heading-arrow_container > h3 {
     margin: 0.05rem;
 }
 
+div.home-contact-form_sub-heading {
+    color: white;
+}
+
 div.home-contact-form_heading-container > h3 {
     font-size: 3rem;
     text-align: left;
@@ -136,6 +142,7 @@ div.home-contact-form_heading-container > h3 {
     width: 20rem;
     padding: 3rem 0px;
     border: 1px solid var(--secondary-border-color);
+    box-shadow: 0 2px 5px #000000
 }
 
 .home-contact-form {
@@ -177,6 +184,7 @@ div.contact-form_field > input {
     padding: 0rem 0.5rem;
     box-sizing: border-box;
     background-color: var(--secondary-bg-color);
+    color: var(--main-text-color)
 }
 
 div.contact-form_field > textarea {
@@ -190,17 +198,19 @@ div.contact-form_field > textarea {
     box-sizing: border-box;
     background-color: var(--secondary-bg-color);
     border: 1px var(--secondary-border-color) solid;
+    color: var(--main-text-color)
 }
 
 .contact-form_button {
-    background-color: white;
+    background-color: var(--secondary-bg-color);
     padding: 0.5rem 1rem;
     border-radius: 17.5px;
+    color: white;
 }
 
 .contact-form_button:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: 2px white solid;
     cursor: pointer;
 }

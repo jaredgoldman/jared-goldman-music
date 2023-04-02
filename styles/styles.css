@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 :root {
-    --main-bg-color: #7DCFB6;
-    --secondary-bg-color: #FBCF9D;
-    --header-footer-bg-color: #1D4E89;
-    --main-text-color: white;
+    --main-bg-color: black;
+    --secondary-bg-color: #1C0B19;;
+    --tertiary-bg-color: #2D1113;
+    --header-bg-color: #1C0B19;
+    --footer-bg-color: #1c1a1c;
+    --main-text-color: #E8E5DA;
     --secondary-text-color: #00B2CA;
-    --main-border-color: grey;
-    --secondary-border-color: white;
+    --main-border-color: #d4d3e3;
+    --secondary-border-color: #d4d3e3; 
 }
 
 body,
