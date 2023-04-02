@@ -122,6 +122,7 @@ div.home-contact-form_heading-arrow_container > h3 {
     font-size: 3rem;
     text-align: left; 
     margin: 0.05rem;
+    white-space: nowrap;;
 }
 
 div.home-contact-form_sub-heading {
@@ -311,4 +312,4 @@ div.contact-form_field > textarea {
     .featured-album_iframe {
         width: 90%;
     }
-}
+    }

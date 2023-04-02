@@ -18,3 +18,13 @@
     height: 120px;
     margin-bottom: 1rem;
 }
+
+@media only screen and (max-device-width: 450px) {
+    .music-embeds {
+        align-content: center;
+    }
+    .music-embed_iframe {
+        width: 70%;
+    }
+}
+    

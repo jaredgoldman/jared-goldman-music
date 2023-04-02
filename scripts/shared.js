@@ -12,4 +12,14 @@ const request = async (path, method = 'GET', data = null) => {
     return await res.json()
 }
 
-export { request }
+const getUrlPathParam = (fullUrl, searchKey) => {
+    const segments = fullUrl.split('/');
+    for (const segment of segments) {
+        const kv = segment.split('=')
+        if (kv[0] === searchKey) {
+            return kv[1]
+        }
+    }
+}
+
+export { request, getUrlPathParam }
