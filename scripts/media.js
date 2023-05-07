@@ -1,4 +1,5 @@
 import { request } from './shared.js'
+import { API_URL } from '../config.js'
 
 const mapMedia = async () => {
     const { data } = await request('/media-items?populate=*')
@@ -13,12 +14,17 @@ const mapMedia = async () => {
     videos.forEach((video) => createVideoComp(video, videoFragment))
 
     const videoNode = document.querySelector('.videos')
-    videoNode.appendChild(videoFragment)
+    videoNode.appendChild(videoFragment);
+
+    const pictureFragment = new DocumentFragment()
+    pictures.forEach((picture) => createPictureComp(picture, pictureFragment))
+
+    const pictureNode = document.querySelector('.pictures')
+    pictureNode.appendChild(pictureFragment);
 }
 
 // TODO: refactor to just return card
 const createVideoComp = ({ attributes }, videoFragment) => {
-    console.log(attributes)
     const card = document.createElement('div')
     card.classList.add('video-container')
 
@@ -42,10 +48,29 @@ const createVideoComp = ({ attributes }, videoFragment) => {
 }
 
 // //TODO: probably create collections of pictures
-// const createPictureComp = ({ attributes }) => {
-//     console.log(attributes)
-//     const fragment = new DocumentFragment()
-// }
+const createPictureComp = ({ attributes }, pictureFragment) => {
+    const { image: { data } } = attributes
+    data.forEach(({ attributes }) => {
+        const path = `${API_URL}${attributes.url}`
+
+        const card = document.createElement('div')
+        card.classList.add('picture-container')
+
+        const downloadEl = document.createElement('a')
+        downloadEl.download = attributes.name
+        downloadEl.href = path
+
+        const photoEl = document.createElement('img')
+        photoEl.src = path
+        photoEl.classList.add('picture-picture')
+
+        downloadEl.appendChild(photoEl)
+        card.appendChild(downloadEl)
+
+        pictureFragment.appendChild(card)
+    })
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     mapMedia()

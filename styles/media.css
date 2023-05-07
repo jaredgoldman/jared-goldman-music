@@ -1,18 +1,22 @@
-.videos_container {
+.videos_container,
+.pictures_container {
     display: flex;
     justify-content: center;
     width: 100%;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
-.videos {
+.videos,
+.pictures {
     width: 90%;
     max-width: 61rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
-.video-container {
+.video-container,
+.picture-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +34,8 @@
     text-align: left;
 }
 
-.video-video {
+.video-video,
+.picture-picture {
     width: 100%;
     height: auto;
     border: none;
