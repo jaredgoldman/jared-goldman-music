@@ -1,10 +1,10 @@
-import { CMS_API_KEY, API_URL } from '../config.js'
+import { API_KEY, API_URL } from '../config.js'
 
 const request = async (path, method = 'GET', data = null) => {
     const body = method !== 'GET' && data ? JSON.stringify(data) : null
     const res = await fetch(`${API_URL}/api${path}`, {
         headers: {
-            Authorization: `bearer ${CMS_API_KEY}`,
+            Authorization: `bearer ${API_KEY}`,
         },
         method,
         body,
@@ -13,7 +13,7 @@ const request = async (path, method = 'GET', data = null) => {
 }
 
 const getUrlPathParam = (fullUrl, searchKey) => {
-    const segments = fullUrl.split('/');
+    const segments = fullUrl.split('/')
     for (const segment of segments) {
         const kv = segment.split('=')
         if (kv[0] === searchKey) {
