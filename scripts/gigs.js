@@ -24,10 +24,12 @@ const mapGigs = async () => {
         const gigVenue = document.createElement('h2')
         gigVenue.innerText = gigData.bandname
 
-        const gigSubHeading = document.createElement('span')
+        const gigSubHeading = document.createElement('p')
+        gigSubHeading.classList.add('gig-card_subheading')
         gigSubHeading.innerText = `${gigData.venue} | ${gigData.bandname}`
 
         const gigDesc = document.createElement('p')
+        gigDesc.classList.add('gig-card_desc')
         gigDesc.innerText = gigData.description
 
         gigNode.appendChild(gigHeading)
