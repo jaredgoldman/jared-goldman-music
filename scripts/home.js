@@ -1,14 +1,26 @@
 import { request } from './shared.js'
 
 const loadContent = async () => {
-    const { data } = await request('/featureds?populate=*')
-    const { album, media_item } = data[0].attributes
+    const { data: featuredContent } = await request('/featureds?populate=*')
+    const {
+        data: {
+            attributes: { text },
+        },
+    } = await request('/music-hero-bio')
+    const { album, media_item } = featuredContent[0].attributes
     const albumCard = createFeaturedEmbedCard(album.data)
     const videoCard = createFeaturedVideoCard(media_item.data)
     const featuredAlbumNode = document.querySelector('.home-featured_album')
     const featuredVideoNode = document.querySelector('.home-featured_video')
     featuredAlbumNode.appendChild(albumCard)
     featuredVideoNode.appendChild(videoCard)
+
+    // add mussic hero bio
+    const musicHero = document.querySelector('.home-bio')
+    const musicHeroBio = document.createElement('p')
+    musicHeroBio.innerHTML = text
+    musicHeroBio.classList.add('home-bio_content')
+    musicHero.appendChild(musicHeroBio)
 }
 
 const createFeaturedEmbedCard = ({ attributes }) => {

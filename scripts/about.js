@@ -8,7 +8,7 @@ const loadContent = async () => {
     } = await request('/bio')
     const bioNode = document.querySelector('.bio')
     const bioParagraph = document.createElement('p')
-    bioParagraph.textContent = bio
+    bioParagraph.innerHTML = bio
     bioParagraph.classList.add('about_content')
     bioNode.appendChild(bioParagraph)
 }

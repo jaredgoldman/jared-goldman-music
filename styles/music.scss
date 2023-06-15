@@ -10,6 +10,15 @@
     flex-direction: column;
     width: 100%;
     max-width: 60rem;
+    margin-left: 1rem;
+
+    .music-embed_card {
+        margin-bottom: 1rem;
+        .music-embed_album-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+    }
 }
 
 .music-embed_iframe {
@@ -27,4 +36,3 @@
         width: 70%;
     }
 }
-    

@@ -17,7 +17,8 @@
 }
 
 .bio_image-container {
-    width: 60rem;
+    margin-top: 2rem;
+    width: 70%;
     height: auto;
 }
 
@@ -25,4 +26,10 @@ div.bio_image-container > img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media only screen and (max-device-width: 450px) {
+    .bio_image-container {
+        width: 90%;
+    }
 }

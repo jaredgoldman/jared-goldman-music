@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 5rem 1.5rem;
+    padding: 5rem 1.5rem 0 1.5rem;
     background-image: linear-gradient(to bottom, transparent 44%, black 83%),
         linear-gradient(to right, transparent 60%, black 99%),
         linear-gradient(to left, transparent 60%, black 99%),
@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: 70%;
     box-sizing: border-box;
-    height: 800px;
+    height: 100vh;
 }
 
 .home-hero {
@@ -45,7 +45,12 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 5rem 0;
+    padding-bottom: 5rem;
+    .home-bio_content {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 75%;
+    }
 }
 
 /* Featured content */
