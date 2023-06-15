@@ -8,7 +8,6 @@ const getBandcampEmbeds = async () => {
     embedNode.appendChild(embedFragment)
 }
 
-// TODO: refactor to just return card
 const createEmbedCard = ({ attributes }, fragment) => {
     const card = document.createElement('div')
     card.classList.add('music-embed_card')
@@ -29,13 +28,12 @@ const createEmbedCard = ({ attributes }, fragment) => {
     fragment.appendChild(card)
 }
 
-// TODO: optimize this
 const resizeEmbed = () => {
     const query = window.matchMedia('(max-width: 450px)')
     const embeds = document.querySelectorAll('.music-embed_iframe')
     query.addEventListener('change', (event) => {
         if (event.matches) {
-            embeds.forEach(embed => {
+            embeds.forEach((embed) => {
                 const albumID = getUrlPathParam(embed.src, 'album')
                 embed.src = `https://bandcamp.com/EmbeddedPlayer/album=${albumID}/size=large/bgcol=181a1b/linkcol=056cc4/minimal=true/transparent=true`
                 const width = embed.offsetWidth
@@ -43,7 +41,7 @@ const resizeEmbed = () => {
                 embed.style.height = `${height}rem`
             })
         } else {
-            embeds.forEach(embed => {
+            embeds.forEach((embed) => {
                 const albumID = getUrlPathParam(embed.src, 'album')
                 embed.src = `https://bandcamp.com/EmbeddedPlayer/album=${albumID}/size=large/bgcol=181a1b/linkcol=056cc4/tracklist=false/artwork=small/transparent=true`
                 embed.style.width = '100%'

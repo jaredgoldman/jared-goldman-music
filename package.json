@@ -1,0 +1,16 @@
+{
+    "name": "personal_repos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "css": "node-sass ./styles/ -o ./css",
+        "dev": "npm run css -- --watch & live-server"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^9.0.0"
+    }
+}

@@ -1,0 +1,42 @@
+.videos_container,
+.pictures_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.videos,
+.pictures {
+    width: 90%;
+    max-width: 61rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.video-container,
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 0;
+}
+
+.video-heading {
+    width: 100%;
+    text-align: left;
+}
+
+.video-desc {
+    width: 100%;
+    text-align: left;
+}
+
+.video-video,
+.picture-picture {
+    width: 100%;
+    height: auto;
+    border: none;
+}

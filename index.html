@@ -1,87 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Jared Goldman | Professional Drummer</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="styles/index.css" rel="stylesheet" />
+        <link href="styles/shared.css" rel="stylesheet" />
+        <script src="scripts/contact.js" type="module"></script>
+        <script src="scripts/sharedComponents.js" type="module"></script>
+        <script src="scripts/home.js" type="module"></script>
+        <script src="scripts/sharedActions.js" type="module"></script>
+    </head>
 
-<head>
-    <title>Jared Goldman | Professional Drummer</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/index.css" rel="stylesheet" />
-    <link href="styles/shared.css" rel="stylesheet" />
-    <script src="scripts/contact.js" type="module"></script>
-    <script src="scripts/sharedComponents.js" type="module"></script>
-    <script src="scripts/home.js" type="module"></script>
-    <script src="scripts/sharedActions.js" type="module"></script>
-</head>
-
-<body>
-    <main-header></main-header>
-    <main class="home">
-        <section class="home-hero_container">
-            <div class="home-hero">
-                <h1 class="home-hero_heading">Jared Goldman</h1>
-                <h1 class="home-hero_heading-two">Drummer - Educator</h1>
-                <!-- <h3 class="home-hero_desc">Hero description</h3> -->
-            </div>
-        </section>
-        <section class="home-bio">
-            <div>Some bio text will go here</div>
-        </section>
-        <section class="home-featured_container">
-            <h3>Featured Content</h3>
-            <div class="home-featured">
-                <div class="home-featured_video"></div>
-                <div class="home-featured_album"></div>
-            </div>
-        </section>
-        <section class="home-contact-form_section">
-            <div class="home-contact-form_container">
-                <div class="home-contact-form_heading-container">
-                    <div class="home-contact-form_heading">
-                        <h3>I take requests.</h3>
-                        <div class="home-contact-form_heading-arrow_container">
-                            <div class="home-contact-form_heading-arrow">
-                                <img src="assets/arrow.png" alt="arrow">
-                            </div>
-                            <h3>Reach out</h3>
-                        </div>
-                        <p class="home-contact-form_sub-heading">*I'm available for gigs, teaching and genuine human
-                            connections.</p>
-                    </div>
+    <body>
+        <main-header></main-header>
+        <main class="home">
+            <section class="home-hero_container">
+                <div class="home-hero">
+                    <h1 class="home-hero_heading">Jared Goldman</h1>
+                    <h1 class="home-hero_heading-two">Drummer - Educator</h1>
+                    <!-- <h3 class="home-hero_desc">Hero description</h3> -->
                 </div>
-                <form class="home-contact-form" id="contact" method="post" target="_self">
-                    <div class="home-contact-form_body">
-                        <div class="contact-form_field">
-                            <label class="contact-form_label">Name</label>
-                            <input id="contact-name" type="name" />
+            </section>
+            <section class="home-bio">
+                <div>Some bio text will go here</div>
+            </section>
+            <section class="home-featured_container">
+                <h3>Featured Content</h3>
+                <div class="home-featured">
+                    <div class="home-featured_video"></div>
+                    <div class="home-featured_album"></div>
+                </div>
+            </section>
+            <section class="home-contact-form_section">
+                <div class="home-contact-form_container">
+                    <div class="home-contact-form_heading-container">
+                        <div class="home-contact-form_heading">
+                            <h3>I take requests.</h3>
+                            <div
+                                class="home-contact-form_heading-arrow_container"
+                            >
+                                <div class="home-contact-form_heading-arrow">
+                                    <img src="assets/arrow.png" alt="arrow" />
+                                </div>
+                                <h3>Reach out</h3>
+                            </div>
+                            <p class="home-contact-form_sub-heading">
+                                *I'm available for gigs, teaching and genuine
+                                human connections.
+                            </p>
                         </div>
-                        <div class="contact-form_field">
-                            <label class="contact-form_label">Email Address</label>
-                            <input id="contact-email" type="email" />
-                        </div>
-                        <div class="contact-form_field">
-                            <label class="contact-form_label">Message</label>
-                            <textarea id="contact-message" type="text"></textarea>
-                        </div>
-                        <button class="contact-form_button" type="submit">
-                            Submit
-                        </button>
                     </div>
-                </form>
+                    <form
+                        class="home-contact-form"
+                        id="contact"
+                        method="post"
+                        target="_self"
+                    >
+                        <div class="home-contact-form_body">
+                            <div class="contact-form_field">
+                                <label class="contact-form_label">Name</label>
+                                <input id="contact-name" type="name" />
+                            </div>
+                            <div class="contact-form_field">
+                                <label class="contact-form_label"
+                                    >Email Address</label
+                                >
+                                <input id="contact-email" type="email" />
+                            </div>
+                            <div class="contact-form_field">
+                                <label class="contact-form_label"
+                                    >Message</label
+                                >
+                                <textarea
+                                    id="contact-message"
+                                    type="text"
+                                ></textarea>
+                            </div>
+                            <button class="contact-form_button" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div>
+                <div class="home-contact-form_success">
+                    <h3 class="home-contact-form_success-heading">
+                        Thank you for your message!
+                    </h3>
+                    <p class="home-contact-form_success-text">
+                        I will get back to you as soon as possible.
+                    </p>
+                </div>
             </div>
-        </section>
-        <div>
-            <div class="home-contact-form_success">
-                <h3 class="home-contact-form_success-heading">
-                    Thank you for your message!
-                </h3>
-                <p class="home-contact-form_success-text">
-                    I will get back to you as soon as possible.
-                </p>
-            </div>
-        </div>
-        <main-footer></main-footer>
-    </main>
-</body>
-
+            <main-footer></main-footer>
+        </main>
+    </body>
 </html>
