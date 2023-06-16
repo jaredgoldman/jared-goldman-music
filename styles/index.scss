@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-
 .home-hero_container {
     display: flex;
     justify-content: center;
@@ -260,6 +257,14 @@ div.contact-form_field > textarea {
 
 .home-contact-form_success-active {
     display: flex;
+}
+
+.home-contact-form_error-container {
+    margin-top: 1rem;
+    .home-contact-form_error {
+        font-size: 1rem;
+        color: red;
+    }
 }
 
 @media only screen and (max-device-width: 550px) {
