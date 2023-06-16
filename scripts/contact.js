@@ -12,6 +12,7 @@ const submitContactMessage = () => {
         const email = emailInput.value
         const message = messageInput.value
         const res = await request('/contact', 'POST', { name, email, message })
+        console.log(res)
         if (res.accepted.length) {
             console.log('message sent')
             successBadge.classList.add('home-contact-form_success-active')
