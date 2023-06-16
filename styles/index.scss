@@ -238,15 +238,28 @@ div.contact-form_field > textarea {
 .home-contact-form_success {
     display: none;
     position: fixed;
-    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-text-color);
     top: 1rem;
     right: 2rem;
-    width: 15rem;
-    height: 10rem;
+    width: 12rem;
+    border-radius: 20px;
+    padding: 1rem;
+
+    .home-contact-form_success-heading,
+    .home-contact-form_success-text {
+        text-align: center;
+        color: black;
+    }
+    .home-contact-form_success-heading {
+        margin-bottom: 1rem;
+    }
 }
 
 .home-contact-form_success-active {
-    display: block;
+    display: flex;
 }
 
 @media only screen and (max-device-width: 550px) {

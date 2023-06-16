@@ -11,11 +11,21 @@ const submitContactMessage = () => {
         const name = nameInput.value
         const email = emailInput.value
         const message = messageInput.value
-        const res = await request('/contact', 'POST', { name, email, message })
+        const referrer = 'music'
+        const res = await request('/contact', 'POST', {
+            name,
+            email,
+            message,
+            referrer,
+        })
         console.log(res)
         if (res.accepted.length) {
-            console.log('message sent')
             successBadge.classList.add('home-contact-form_success-active')
+            setTimeout(() => {
+                successBadge.classList.remove(
+                    'home-contact-form_success-active'
+                )
+            }, 3000)
         } else {
             // display error badge
         }
