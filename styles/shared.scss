@@ -1,7 +1,46 @@
-@import './reset.scss';
-@import './styles.scss';
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&?family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+:root {
+    --main-bg-color: black;
+    --secondary-bg-color: #1c0b19;
+    --tertiary-bg-color: #2d1113;
+    --header-bg-color: #1c0b19;
+    --footer-bg-color: #1c1a1c;
+    --main-text-color: #e8e5da;
+    --secondary-text-color: #69018f;
+    --main-border-color: #d4d3e3;
+    --secondary-border-color: #d4d3e3;
+}
+
+body,
+main {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+}
+
+h2,
+h3 {
+    font-family: 'Carter One', cursive;
+}
+
+.heading_container {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
 
 /* Header styles */
 main-header {
