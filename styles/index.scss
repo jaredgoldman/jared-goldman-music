@@ -3,18 +3,35 @@
 }
 
 .home-hero_container {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
-    background-image: linear-gradient(to bottom, transparent 50%, black 83%),
-        linear-gradient(to right, transparent 85%, black 99%),
-        linear-gradient(to left, transparent 85%, black 99%),
-        url('../assets/images/SGC_3009.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 70%;
     box-sizing: border-box;
     height: 30rem;
+
+    .home-hero_image-container {
+        position: relative;
+        height: 100%;
+        margin-bottom: 1rem;
+
+        .home-hero_gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to bottom, transparent 50%, black 83%),
+                linear-gradient(to right, transparent 85%, black 99%),
+                linear-gradient(to left, transparent 85%, black 99%);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }
 
 .home-hero_headings {
