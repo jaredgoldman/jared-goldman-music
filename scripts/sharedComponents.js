@@ -13,16 +13,16 @@ class Header extends HTMLElement {
                             <a class="header-link" href="/">JG</a>
                         </div>
                         <div class="header-link_container">
-                            <a class="header-link" href="/about.html">About</a>
+                            <a class="header-link" href="/about">About</a>
                         </div>
                         <div class="header-link_container">
-                            <a class="header-link" href="/gigs.html">Gigs</a>
+                            <a class="header-link" href="/gigs">Gigs</a>
                         </div>
                         <div class="header-link_container">
-                            <a class="header-link" href="/media.html">Media</a>
+                            <a class="header-link" href="/media">Media</a>
                         </div>
                         <div class="header-link_container">
-                            <a class="header-link" href="/music.html">Music</a>
+                            <a class="header-link" href="/music">Music</a>
                         </div>
                     </div>
                      <div class="header-socials">
@@ -35,7 +35,7 @@ class Header extends HTMLElement {
                             <div class='header-socials_image-container'>
                                 <img src='../assets/email.png'/>
                             </div>
-                        </a> 
+                        </a>
                     </div>
                 </div>
 

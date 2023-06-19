@@ -30,7 +30,11 @@
 
 @media only screen and (max-device-width: 450px) {
     .music-embeds {
+        margin-left: 0;
         align-content: center;
+        .music-embed_album-title {
+            text-align: center;
+        }
     }
     .music-embed_iframe {
         width: 70%;
