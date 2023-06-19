@@ -12,6 +12,9 @@
     --secondary-text-color: #69018f;
     --main-border-color: #d4d3e3;
     --secondary-border-color: #d4d3e3;
+    --primary-font-family: 'Heebo', sans-serif;
+    --secondary-font-family: 'Carter One', cursive;
+    --tertiary-font-family: 'Fugaz One', cursive;
 }
 
 body,
@@ -23,13 +26,13 @@ main {
     width: 100%;
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
-    font-family: 'Heebo', sans-serif;
+    font-family: var(--primary-font-family);
     margin: 0;
 }
 
 h2,
 h3 {
-    font-family: 'Carter One', cursive;
+    font-family: var(--secondary-font-family);
 }
 
 .heading_container {
@@ -51,7 +54,7 @@ main-header {
     border-bottom: 1px solid var(--main-border-color);
     padding: 1.5rem;
     box-sizing: border-box;
-    font-family: 'Carter One', cursive;
+    font-family: var(--secondary-font-family);
     background-color: var(--secondary-bg-color);
 }
 

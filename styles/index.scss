@@ -6,9 +6,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-image: linear-gradient(to bottom, transparent 44%, black 83%),
-        linear-gradient(to right, transparent 60%, black 99%),
-        linear-gradient(to left, transparent 60%, black 99%),
+    background-image: linear-gradient(to bottom, transparent 50%, black 83%),
+        linear-gradient(to right, transparent 85%, black 99%),
+        linear-gradient(to left, transparent 85%, black 99%),
         url('../assets/images/SGC_3009.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
     .home-hero_heading-two {
         font-size: 3rem;
         margin: 0.1rem 0;
-        font-family: 'Fugaz One', cursive;
+        font-family: var(--tertiary-font-family);
     }
 
     .home-hero_heading-two {
@@ -53,7 +53,8 @@
     .home-bio_content {
         text-align: center;
         font-size: 1.5rem;
-        font-family: 'Carter One', cursive;
+        font-family: var(--primary-font-family);
+        font-weight: bold;
         width: 75%;
         margin-top: 0;
     }
