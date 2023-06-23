@@ -64,7 +64,3 @@ customElements.define('main-footer', Footer)
 // Create an instance of the Header and Footer elements
 const header = new Header()
 const footer = new Footer()
-
-// Append the Header and Footer to the body element
-document.body.appendChild(header)
-document.body.appendChild(footer)
