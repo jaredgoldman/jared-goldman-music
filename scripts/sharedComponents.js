@@ -2,7 +2,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         const isLocal = window.location.href.includes('8080')
         const extension = isLocal ? '.html' : ''
-        console.log(isLocal)
+
         this.innerHTML = `
       <nav class="header_container">
           <div class="menu-toggle">
@@ -13,7 +13,7 @@ class Header extends HTMLElement {
           <div class="menu-full">
               <div class="header-links_container">
                   <div class="header-link_container">
-                      <a class="header-link" href="/${extension}">JG</a>
+                      <a class="header-link" href="/">JG</a>
                   </div>
                   <div class="header-link_container">
                       <a class="header-link" href="/about${extension}">About</a>
@@ -58,9 +58,22 @@ class Footer extends HTMLElement {
     }
 }
 
+class Loader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <div class="loader-overlay">
+            <div class="loader-spinner">
+                <img src="../assets/spinner.png" />
+            </div>
+        </div>
+    `
+    }
+}
+
 customElements.define('main-header', Header)
 customElements.define('main-footer', Footer)
-
+customElements.define('main-loader', Loader)
 // Create an instance of the Header and Footer elements
 const header = new Header()
 const footer = new Footer()
+const loader = new Loader()
