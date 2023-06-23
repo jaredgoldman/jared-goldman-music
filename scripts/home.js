@@ -1,7 +1,6 @@
 import { request } from './shared.js'
-import { fetchCmsData } from './cms.js'
+
 const loadContent = async () => {
-    fetchCmsData()
     const { data: featuredContent } = await request('/featureds?populate=*')
     const {
         data: {
