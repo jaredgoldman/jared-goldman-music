@@ -1,6 +1,8 @@
 import { request } from './shared.js'
-import { API_URL } from '../config.js'
 
+/**
+ * Fetches media from the server and maps to html elements
+ */
 const mapMedia = async () => {
     const { data } = await request('/media-items?populate=*')
     const videos = []
@@ -24,7 +26,6 @@ const mapMedia = async () => {
     pictureNode.appendChild(pictureFragment)
 }
 
-// TODO: refactor to just return card
 const createVideoComp = ({ attributes }, videoFragment) => {
     const card = document.createElement('div')
     card.classList.add('video-container')
@@ -48,7 +49,6 @@ const createVideoComp = ({ attributes }, videoFragment) => {
     videoFragment.appendChild(card)
 }
 
-// //TODO: probably create collections of pictures
 const createPictureComp = ({ attributes }, pictureFragment) => {
     const {
         image: { data },

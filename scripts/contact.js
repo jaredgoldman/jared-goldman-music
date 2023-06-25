@@ -1,5 +1,10 @@
 import { request } from './shared.js'
 
+/**
+ * Adds a listener to the contact form
+ * Submits a contact message to the server
+ * Handles success and error messages
+ */
 const submitContactMessage = () => {
     const form = document.getElementById('contact')
     const nameInput = document.getElementById('contact-name')

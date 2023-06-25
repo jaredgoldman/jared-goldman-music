@@ -7,7 +7,9 @@ const formatDate = (dateString) => {
     }).format(new Date(dateString))
 }
 
-// TODO: Dry this up
+/**
+ * Fetches gigs from the server and maps to html elements
+ */
 const mapGigs = async () => {
     const { data: gigs } = await request('/gigs')
     const gigsNode = document.querySelector('.gigs')

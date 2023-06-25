@@ -28,6 +28,9 @@ const createEmbedCard = ({ attributes }, fragment) => {
     fragment.appendChild(card)
 }
 
+/**
+ * Dynamically resize embeds based on screen size
+ */
 const resizeEmbed = () => {
     const query = window.matchMedia('(max-width: 450px)')
     const embeds = document.querySelectorAll('.music-embed_iframe')

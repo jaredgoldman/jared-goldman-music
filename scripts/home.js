@@ -8,7 +8,7 @@ const loadContent = async () => {
         },
     } = await request('/music-hero-bio')
     const { album, media_item } = featuredContent[0].attributes
-    const albumCard = createFeaturedEmbedCard(album.data)
+    const albumCard = createFeaturedBandCampCard(album.data)
     const videoCard = createFeaturedVideoCard(media_item.data)
     const featuredAlbumNode = document.querySelector('.home-featured_album')
     const featuredVideoNode = document.querySelector('.home-featured_video')
@@ -23,7 +23,11 @@ const loadContent = async () => {
     musicHero.appendChild(musicHeroBio)
 }
 
-const createFeaturedEmbedCard = ({ attributes }) => {
+/**
+ * Utilize bandcamp iframe to display featured album
+ * @param {Object} attributes
+ */
+const createFeaturedBandCampCard = ({ attributes }) => {
     const card = document.createElement('div')
     card.classList.add('music-embed_card')
 
@@ -37,6 +41,10 @@ const createFeaturedEmbedCard = ({ attributes }) => {
     return card
 }
 
+/**
+ * Utilize youtube iframe to display featured video
+ * @param {Object} attributes
+ */
 const createFeaturedVideoCard = ({ attributes }) => {
     const card = document.createElement('div')
     card.classList.add('featured-video_iframe')

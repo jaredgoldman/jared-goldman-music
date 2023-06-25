@@ -12,6 +12,9 @@ const request = async (path, method = 'GET', data = null) => {
     return await res.json()
 }
 
+/**
+ * Fetches a url path parameter from a full url
+ */
 const getUrlPathParam = (fullUrl, searchKey) => {
     const segments = fullUrl.split('/')
     for (const segment of segments) {
