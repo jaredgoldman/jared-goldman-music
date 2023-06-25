@@ -31,6 +31,10 @@ main {
     margin: 0;
 }
 
+main {
+    animation: fadeIn 0.75s ease-in-out forwards;
+}
+
 h2,
 h3 {
     font-family: var(--secondary-font-family);
@@ -225,4 +229,17 @@ footer {
     max-width: 60rem;
     justify-content: flex-start;
     text-align: left;
+}
+
+// Animations
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
