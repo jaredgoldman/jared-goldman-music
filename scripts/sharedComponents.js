@@ -31,12 +31,12 @@ class Header extends HTMLElement {
                <div class="header-socials">
                   <a href="https://www.instagram.com/jaredgoldmandrums/" class="header-social_icon">
                       <div class='header-socials_image-container'>
-                          <img src='../assets/insta.png'/>
+                          <img src='../assets/images/insta.png'/>
                       </div>
                   </a>
                   <a href="mailto:jaredgoldmandrums@gmail.com" class="header-social_icon">
                       <div class='header-socials_image-container'>
-                          <img src='../assets/email.png'/>
+                          <img src='../assets/images/email.png'/>
                       </div>
                   </a>
               </div>
@@ -63,7 +63,7 @@ class Loader extends HTMLElement {
         this.innerHTML = `
         <div class="loader-overlay">
             <div class="loader-spinner">
-                <img src="../assets/spinner.png" />
+                <img src="../assets/images/spinner.png" />
             </div>
         </div>
     `
