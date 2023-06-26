@@ -64,7 +64,7 @@ const sizeFeaturedAlbum = () => {
     const height = width / 16
     albumNode.style.height = `${height}rem`
 }
-document.addEventListener('DOMContentLoaded', () => {
-    loadContent()
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadContent()
     sizeFeaturedAlbum()
 })
